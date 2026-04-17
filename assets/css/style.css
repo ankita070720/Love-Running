@@ -24,6 +24,9 @@ header{
     position: fixed;
     z-index: 99;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 header a{
     text-decoration: none;
@@ -46,11 +49,35 @@ h1{
 .active{
     border-bottom: 1px solid #3a3a3a;
 }
+/* navbar style with dropdown toggle */
+nav{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding-left:0 1rem ;
+    box-shadow: 0 2px 2px #3a3a3a;  
+    display: none;
+    top: 100%;
+}
+/* tildle to join navigation  to nav toggle */
+#nav-toggle:checked~nav{
+    display: block;
+}
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    font-size: 2rem;
+}
+
+
 /* Main-Content */
 main{
     background-color: green;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 /* Footer */
 footer{
