@@ -83,3 +83,33 @@ main{
 footer{
     background-color: lightcoral;
 }
+
+/* media queries for tablets and larger(768px and up) */
+@media screen and (min-width: 768px) {
+    /* header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+    #menu > li{
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+    #logo{
+        width: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    /* Push main content down to accomodate larger header */
+    main{
+        margin-top: 79px;
+    }
+}
